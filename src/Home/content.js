@@ -2,14 +2,23 @@ import React from "react";
 import "./Content.css";
 import Card from "react-bootstrap/Card";
 import { Button } from "react-bootstrap";
+import { useState } from "react";
 import AOS from 'aos'
+
 const content = () => {
+  
     AOS.init();
+    
+    
   return (
     <div className="content">
       <p className="Header">
         choose a plan that's just right for you !<p />
       </p>
+      <div className="monthly-div">
+      <button className="monthly-btn" >Monthly</button>
+      <button className="Annually-btn">Annually</button>
+      </div>
 
       <div className="all">
         <section className="pricing py-5">
